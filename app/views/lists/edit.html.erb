@@ -4,5 +4,7 @@
  <%= f.text_field :title %>
  <p>本文</p>
  <%= f.text_area :body %>
+ <p>画像</p>
+ <%= f.file_field :image, accept: "image/*" %>
  <%= f.submit '保存' %>
 <% end %>
